@@ -2,6 +2,31 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
 
+## Maven Integration
+
+This Angular project is integrated with the Maven build system using the [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin).
+
+### Building with Maven
+
+From the root project directory, run:
+
+```bash
+mvn clean install
+```
+
+This will:
+1. Install Node.js and npm locally (in the `node/` directory)
+2. Install npm dependencies
+3. Build the Angular application
+4. Package the application
+
+The Angular build output will be in `web/dist/release-planner-web/`.
+
+### Maven Build Phases
+
+- **generate-resources**: Installs Node.js, npm, and npm dependencies
+- **compile**: Builds the Angular application using `ng build`
+
 ## Development server
 
 To start a local development server, run:
