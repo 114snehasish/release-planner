@@ -37,3 +37,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Angular ###
+node_modules/
+node/
+dist/
+.angular/
+.cache/
