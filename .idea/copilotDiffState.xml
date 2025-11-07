@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/web/karma.conf.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/web/karma.conf.js" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="// Karma configuration file, see link for more information&#10;// https://karma-runner.github.io/1.0/config/configuration-file.html&#10;&#10;module.exports = function (config) {&#10;  config.set({&#10;    basePath: '',&#10;    frameworks: ['jasmine', '@angular/build'],&#10;    plugins: [&#10;      require('karma-jasmine'),&#10;      require('karma-brave-launcher'),&#10;      require('karma-jasmine-html-reporter'),&#10;      require('karma-coverage')&#10;    ],&#10;    client: {&#10;      jasmine: {&#10;        // you can add configuration options for Jasmine here&#10;        // the possible options are listed at https://jasmine.github.io/api/edge/Configuration.html&#10;        // for example, you can disable the random execution with `random: false`&#10;        // or set a specific seed with `seed: 4321`&#10;      },&#10;      clearContext: false // leave Jasmine Spec Runner output visible in browser&#10;    },&#10;    jasmineHtmlReporter: {&#10;      suppressAll: true // removes the duplicated traces&#10;    },&#10;    coverageReporter: {&#10;      dir: require('path').join(__dirname, './coverage/release-planner-web'),&#10;      subdir: '.',&#10;      reporters: [&#10;        { type: 'html' },&#10;        { type: 'text-summary' }&#10;      ]&#10;    },&#10;    reporters: ['progress', 'kjhtml'],&#10;    browsers: ['Brave'],&#10;    restartOnFileChange: true,&#10;    customLaunchers: {&#10;      Brave: {&#10;        base: 'BraveBrowser',&#10;        flags: ['--no-sandbox', '--disable-gpu']&#10;      }&#10;    }&#10;  });&#10;};&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
