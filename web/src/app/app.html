@@ -1,152 +1,158 @@
-<div class="min-h-screen bg-gradient-to-br from-primary-50 via-secondary-50 to-accent-50">
+<div class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
   <!-- Header -->
-  <header class="bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <h1 class="text-3xl font-bold text-primary-600">
+  <header class="bg-gradient-to-r from-primary-600 to-secondary-600 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <h1 class="text-5xl font-black text-white tracking-tight">
         {{ title() }}
       </h1>
-      <p class="mt-2 text-neutral-600">TailwindCSS v4 Integration Demo</p>
+      <p class="mt-3 text-xl font-medium text-primary-100">TailwindCSS v4 Integration Demo</p>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Welcome Section -->
-    <section class="mb-12">
-      <div class="card max-w-3xl mx-auto text-center">
-        <h2 class="text-2xl font-bold text-neutral-900 mb-4">
-          🎉 TailwindCSS Configuration Complete!
+    <section class="mb-16">
+      <div class="card max-w-4xl mx-auto text-center bg-white">
+        <h2 class="text-4xl font-extrabold bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600 bg-clip-text text-transparent mb-6">
+          🎉 TailwindCSS is Working Perfectly!
         </h2>
-        <p class="text-neutral-600 mb-6">
-          This page demonstrates TailwindCSS v4 integration with Angular. All styles are configured using the latest CSS-first approach with custom theme variables.
+        <p class="text-lg text-neutral-700 font-medium mb-4">
+          This page demonstrates TailwindCSS v4 with <span class="text-primary-600 font-bold">varied colors</span>, 
+          <span class="text-secondary-600 font-semibold text-xl">different sizes</span>, and 
+          <span class="text-accent-600 font-black text-2xl">multiple weights</span>.
+        </p>
+        <p class="text-base text-neutral-600 italic">
+          Using the modern Inter font family with CSS-first configuration approach.
         </p>
       </div>
     </section>
 
-    <!-- Features Grid -->
-    <section class="mb-12">
-      <h3 class="text-2xl font-semibold text-center mb-8">Key Features</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="card hover:shadow-lg transition-shadow">
-          <div class="text-primary-600 text-4xl mb-4">🎨</div>
-          <h4 class="text-xl font-semibold mb-2">Custom Theme</h4>
-          <p class="text-neutral-600">
-            Comprehensive color palette with primary, secondary, accent, and neutral colors using OKLCH color space.
-          </p>
+    <!-- Typography Showcase -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-center mb-10 text-neutral-800">Font Sizes & Weights Demonstration</h3>
+      <div class="card max-w-4xl mx-auto bg-gradient-to-br from-white to-neutral-50">
+        <div class="space-y-6">
+          <div>
+            <p class="text-xs font-light text-neutral-500 mb-1">Extra Small - Light (text-xs font-light)</p>
+            <p class="text-xs font-light text-neutral-600">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div>
+            <p class="text-sm font-normal text-neutral-500 mb-1">Small - Normal (text-sm font-normal)</p>
+            <p class="text-sm font-normal text-neutral-700">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div>
+            <p class="text-base font-medium text-neutral-500 mb-1">Base - Medium (text-base font-medium)</p>
+            <p class="text-base font-medium text-primary-600">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div>
+            <p class="text-lg font-semibold text-neutral-500 mb-1">Large - Semibold (text-lg font-semibold)</p>
+            <p class="text-lg font-semibold text-secondary-600">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div>
+            <p class="text-xl font-bold text-neutral-500 mb-1">XL - Bold (text-xl font-bold)</p>
+            <p class="text-xl font-bold text-accent-600">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div>
+            <p class="text-2xl font-extrabold text-neutral-500 mb-1">2XL - Extrabold (text-2xl font-extrabold)</p>
+            <p class="text-2xl font-extrabold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div>
+            <p class="text-3xl font-black text-neutral-500 mb-1">3XL - Black (text-3xl font-black)</p>
+            <p class="text-3xl font-black text-primary-700">The quick brown fox jumps over the lazy dog</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Showcase -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-center mb-10 text-neutral-800">Color Palette in Action</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-primary-100 border-primary-300 hover:bg-primary-200 transition-colors">
+          <h4 class="text-2xl font-bold text-primary-800 mb-3">Primary Blue</h4>
+          <p class="text-sm font-medium text-primary-600 mb-2">Shades 100-800</p>
+          <div class="flex gap-2 flex-wrap">
+            <div class="w-12 h-12 rounded-lg bg-primary-400 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-primary-500 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-primary-600 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-primary-700 shadow-md"></div>
+          </div>
         </div>
 
-        <div class="card hover:shadow-lg transition-shadow">
-          <div class="text-secondary-600 text-4xl mb-4">📝</div>
-          <h4 class="text-xl font-semibold mb-2">Typography System</h4>
-          <p class="text-neutral-600">
-            Custom font families (Inter, Fira Code) and comprehensive font size scale for consistent text styling.
-          </p>
+        <div class="card bg-secondary-100 border-secondary-300 hover:bg-secondary-200 transition-colors">
+          <h4 class="text-2xl font-bold text-secondary-800 mb-3">Secondary Purple</h4>
+          <p class="text-sm font-medium text-secondary-600 mb-2">Shades 100-800</p>
+          <div class="flex gap-2 flex-wrap">
+            <div class="w-12 h-12 rounded-lg bg-secondary-400 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-secondary-500 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-secondary-600 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-secondary-700 shadow-md"></div>
+          </div>
         </div>
 
-        <div class="card hover:shadow-lg transition-shadow">
-          <div class="text-accent-600 text-4xl mb-4">📐</div>
-          <h4 class="text-xl font-semibold mb-2">Spacing Scale</h4>
-          <p class="text-neutral-600">
-            Carefully crafted spacing system for consistent layouts and component spacing.
-          </p>
-        </div>
-
-        <div class="card hover:shadow-lg transition-shadow">
-          <div class="text-primary-600 text-4xl mb-4">🔘</div>
-          <h4 class="text-xl font-semibold mb-2">Custom Components</h4>
-          <p class="text-neutral-600">
-            Pre-built component classes for buttons, cards, and inputs with consistent styling.
-          </p>
-        </div>
-
-        <div class="card hover:shadow-lg transition-shadow">
-          <div class="text-secondary-600 text-4xl mb-4">📱</div>
-          <h4 class="text-xl font-semibold mb-2">Responsive Design</h4>
-          <p class="text-neutral-600">
-            Mobile-first responsive breakpoints for seamless experiences across all devices.
-          </p>
-        </div>
-
-        <div class="card hover:shadow-lg transition-shadow">
-          <div class="text-accent-600 text-4xl mb-4">⚡</div>
-          <h4 class="text-xl font-semibold mb-2">Best Practices</h4>
-          <p class="text-neutral-600">
-            Following industry best practices with TailwindCSS v4 CSS-first configuration approach.
-          </p>
+        <div class="card bg-accent-100 border-accent-300 hover:bg-accent-200 transition-colors">
+          <h4 class="text-2xl font-bold text-accent-800 mb-3">Accent Green</h4>
+          <p class="text-sm font-medium text-accent-600 mb-2">Shades 100-800</p>
+          <div class="flex gap-2 flex-wrap">
+            <div class="w-12 h-12 rounded-lg bg-accent-400 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-accent-500 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-accent-600 shadow-md"></div>
+            <div class="w-12 h-12 rounded-lg bg-accent-700 shadow-md"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Component Examples -->
-    <section class="mb-12">
-      <h3 class="text-2xl font-semibold text-center mb-8">Component Examples</h3>
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-center mb-10 text-neutral-800">Interactive Components</h3>
       
-      <div class="card max-w-4xl mx-auto space-y-8">
+      <div class="card max-w-4xl mx-auto space-y-10 bg-white">
         <!-- Buttons -->
         <div>
-          <h4 class="text-lg font-semibold mb-4">Buttons</h4>
+          <h4 class="text-2xl font-bold mb-6 text-neutral-800">Button Styles</h4>
           <div class="flex flex-wrap gap-4">
-            <button class="btn btn-primary">Primary Button</button>
-            <button class="btn btn-secondary">Secondary Button</button>
-            <button class="btn btn-outline">Outline Button</button>
-            <button class="btn btn-primary" disabled>Disabled Button</button>
+            <button class="btn btn-primary text-base">Primary Button</button>
+            <button class="btn btn-secondary text-base">Secondary Button</button>
+            <button class="btn btn-outline text-base">Outline Button</button>
+            <button class="btn bg-accent-600 text-white hover:bg-accent-700 focus:ring-accent-500 text-base">Accent Button</button>
+            <button class="btn bg-gradient-to-r from-primary-600 to-secondary-600 text-white hover:from-primary-700 hover:to-secondary-700 text-base">Gradient Button</button>
           </div>
         </div>
 
         <!-- Form Input -->
         <div>
-          <h4 class="text-lg font-semibold mb-4">Form Input</h4>
-          <input
-            type="text"
-            class="input max-w-md"
-            placeholder="Enter your text here..."
-          />
-        </div>
-
-        <!-- Color Palette -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Color Palette</h4>
+          <h4 class="text-2xl font-bold mb-6 text-neutral-800">Form Elements</h4>
           <div class="space-y-4">
-            <div>
-              <p class="text-sm font-medium mb-2">Primary Colors</p>
-              <div class="flex gap-2">
-                <div class="w-12 h-12 rounded bg-primary-400"></div>
-                <div class="w-12 h-12 rounded bg-primary-500"></div>
-                <div class="w-12 h-12 rounded bg-primary-600"></div>
-                <div class="w-12 h-12 rounded bg-primary-700"></div>
-              </div>
-            </div>
-            <div>
-              <p class="text-sm font-medium mb-2">Secondary Colors</p>
-              <div class="flex gap-2">
-                <div class="w-12 h-12 rounded bg-secondary-400"></div>
-                <div class="w-12 h-12 rounded bg-secondary-500"></div>
-                <div class="w-12 h-12 rounded bg-secondary-600"></div>
-                <div class="w-12 h-12 rounded bg-secondary-700"></div>
-              </div>
-            </div>
-            <div>
-              <p class="text-sm font-medium mb-2">Accent Colors</p>
-              <div class="flex gap-2">
-                <div class="w-12 h-12 rounded bg-accent-400"></div>
-                <div class="w-12 h-12 rounded bg-accent-500"></div>
-                <div class="w-12 h-12 rounded bg-accent-600"></div>
-                <div class="w-12 h-12 rounded bg-accent-700"></div>
-              </div>
-            </div>
+            <input
+              type="text"
+              class="input text-base"
+              placeholder="Enter your text here (Inter font)..."
+            />
+            <textarea
+              class="input text-base resize-none"
+              rows="3"
+              placeholder="Textarea with TailwindCSS styling..."
+            ></textarea>
           </div>
         </div>
 
-        <!-- Typography -->
+        <!-- Text Styles Variety -->
         <div>
-          <h4 class="text-lg font-semibold mb-4">Typography</h4>
-          <div class="space-y-2">
-            <p class="text-xs">Extra Small Text (text-xs)</p>
-            <p class="text-sm">Small Text (text-sm)</p>
-            <p class="text-base">Base Text (text-base)</p>
-            <p class="text-lg">Large Text (text-lg)</p>
-            <p class="text-xl">Extra Large Text (text-xl)</p>
-            <p class="text-2xl">2XL Text (text-2xl)</p>
+          <h4 class="text-2xl font-bold mb-6 text-neutral-800">Text Style Combinations</h4>
+          <div class="space-y-3">
+            <p class="text-sm font-light text-neutral-500">Light text in neutral-500</p>
+            <p class="text-base font-normal text-primary-600">Normal text in primary-600</p>
+            <p class="text-lg font-medium text-secondary-700">Medium text in secondary-700</p>
+            <p class="text-xl font-semibold text-accent-600">Semibold text in accent-600</p>
+            <p class="text-2xl font-bold text-primary-700">Bold text in primary-700</p>
+            <p class="text-3xl font-extrabold bg-gradient-to-r from-secondary-600 to-accent-600 bg-clip-text text-transparent">
+              Extrabold gradient text effect
+            </p>
+            <p class="text-base font-mono text-neutral-700 bg-neutral-100 p-3 rounded">
+              <span class="text-primary-600 font-bold">Monospace font:</span> Code-style text using Fira Code fallback
+            </p>
           </div>
         </div>
       </div>
@@ -154,14 +160,22 @@
 
     <!-- Footer Info -->
     <section>
-      <div class="card max-w-3xl mx-auto bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
-        <h3 class="text-2xl font-bold mb-4">✨ Ready for Development</h3>
-        <p class="mb-4">
-          Your Angular application is now fully configured with TailwindCSS v4. The theme system is centralized in <code class="bg-white/20 px-2 py-1 rounded">styles.scss</code> for easy customization.
-        </p>
-        <p class="text-sm opacity-90">
-          Modify colors, fonts, spacing, and other theme variables in the <code class="bg-white/20 px-2 py-1 rounded">@theme</code> block to instantly update your application's design system.
-        </p>
+      <div class="card max-w-4xl mx-auto bg-gradient-to-br from-primary-600 via-secondary-600 to-accent-600 text-white border-none shadow-2xl">
+        <h3 class="text-4xl font-black mb-6">✨ Tailwind is Fully Operational!</h3>
+        <div class="space-y-4 text-lg">
+          <p class="font-medium">
+            🎨 <strong class="font-bold">Colors:</strong> Custom OKLCH palette with primary (blue), secondary (purple), and accent (green)
+          </p>
+          <p class="font-medium">
+            ✍️ <strong class="font-bold">Typography:</strong> Inter font family with 9 weights (100-900) loaded from Google Fonts
+          </p>
+          <p class="font-medium">
+            📏 <strong class="font-bold">Sizes:</strong> Complete scale from text-xs to text-9xl
+          </p>
+          <p class="font-medium">
+            🎯 <strong class="font-bold">Customization:</strong> Modify theme variables in <code class="bg-white/20 px-2 py-1 rounded font-mono text-sm">src/styles.scss</code>
+          </p>
+        </div>
       </div>
     </section>
   </main>
