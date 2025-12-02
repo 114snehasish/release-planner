@@ -17,11 +17,11 @@ export class HeaderComponent {
   getUserInitials(): string {
     const name = this.authService.userName();
     if (!name) return 'U';
-    
-    const parts = name.split(/\s+/);
-    if (parts.length >= 2) {
+
+    const parts = name.split(/\s+/).filter((part) => part.length > 0);
+    if (parts.length >= 2 && parts[0].length > 0 && parts[parts.length - 1].length > 0) {
       return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
     }
-    return name.substring(0, 2).toUpperCase();
+    return name.substring(0, Math.min(2, name.length)).toUpperCase() || 'U';
   }
 }

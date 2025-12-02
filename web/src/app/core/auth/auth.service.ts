@@ -83,15 +83,31 @@ export class AuthService {
     if (hasValidTokens) {
       const claims = this.getIdentityClaims();
       if (claims) {
-        const name =
-          (claims['preferred_username'] as string) ||
-          (claims['name'] as string) ||
-          (claims['email'] as string) ||
-          '';
+        const name = this.extractStringClaim(claims, [
+          'preferred_username',
+          'name',
+          'email',
+        ]);
         this.userNameSignal.set(name);
       }
     } else {
       this.userNameSignal.set('');
     }
+  }
+
+  /**
+   * Safely extract a string claim from the identity claims.
+   */
+  private extractStringClaim(
+    claims: Record<string, unknown>,
+    keys: string[]
+  ): string {
+    for (const key of keys) {
+      const value = claims[key];
+      if (typeof value === 'string' && value.length > 0) {
+        return value;
+      }
+    }
+    return '';
   }
 }
