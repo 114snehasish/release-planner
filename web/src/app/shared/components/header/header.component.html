@@ -1,31 +1,31 @@
-<header class="bg-white shadow-sm border-b border-neutral-200 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-    <div class="flex items-center justify-between">
-      <div>
-        <h1 class="text-3xl font-bold text-primary-600">
+<header class="header">
+  <div class="header__container">
+    <div class="header__content">
+      <div class="header__branding">
+        <h1 class="header__title">
           Release Planner
         </h1>
-        <p class="text-sm text-neutral-600 mt-1">
+        <p class="header__subtitle">
           Planning & Management Dashboard
         </p>
       </div>
-      <nav class="flex items-center gap-4">
+      <nav class="header__nav">
         @if (authService.isAuthenticated()) {
-          <div class="flex items-center gap-4">
-            <div class="flex items-center gap-2">
+          <div class="header__user-section">
+            <div class="header__user-info">
               <div class="avatar avatar-sm avatar-status">
                 {{ getUserInitials() }}
               </div>
-              <span class="text-sm font-medium text-neutral-700">
+              <span class="header__welcome-text">
                 Welcome, {{ authService.userName() }}
               </span>
             </div>
             <button 
-              class="btn-outline btn-sm" 
+              class="btn-outline btn-sm header__logout-btn" 
               (click)="logout()"
               type="button"
             >
-              <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="header__logout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
                 </path>

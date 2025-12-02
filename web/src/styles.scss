@@ -1357,3 +1357,221 @@ body {
   }
 }
 
+
+/* ============================================
+   LAYOUT & UTILITY CLASSES
+   ============================================ */
+
+/* ==================== Page Layout ==================== */
+
+.page-container {
+  @apply min-h-screen bg-neutral-50;
+}
+
+.page-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+}
+
+/* ==================== Section Styles ==================== */
+
+.section {
+  @apply mb-16;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3;
+}
+
+.subsection-title {
+  @apply text-lg font-semibold text-neutral-700 mb-3;
+}
+
+/* ==================== Hero Section ==================== */
+
+.hero {
+  @apply mb-16 text-center;
+}
+
+.hero-title {
+  @apply text-5xl sm:text-6xl font-extrabold text-neutral-900 mb-6;
+}
+
+.hero-description {
+  @apply text-xl text-neutral-600 max-w-3xl mx-auto mb-8;
+}
+
+/* ==================== Flex & Grid Utilities ==================== */
+
+.flex-row-wrap {
+  @apply flex flex-wrap gap-3;
+}
+
+.flex-items-center {
+  @apply flex items-center gap-4;
+}
+
+.flex-items-center-lg {
+  @apply flex items-center gap-6;
+}
+
+.grid-2-cols {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.grid-3-cols {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+}
+
+/* ==================== Spacing Utilities ==================== */
+
+.space-stack-sm {
+  @apply space-y-3;
+}
+
+.space-stack-md {
+  @apply space-y-4;
+}
+
+.space-stack-lg {
+  @apply space-y-6;
+}
+
+/* ==================== Label & Form Utilities ==================== */
+
+.label-inline {
+  @apply flex items-center gap-3 cursor-pointer;
+}
+
+.label-text {
+  @apply text-sm text-neutral-700;
+}
+
+.label-text-muted {
+  @apply text-sm text-neutral-500;
+}
+
+/* ==================== Card Typography ==================== */
+
+.card-title {
+  @apply text-lg font-bold text-neutral-900;
+}
+
+.card-title-mb {
+  @apply text-lg font-bold text-neutral-900 mb-2;
+}
+
+.card-text {
+  @apply text-sm text-neutral-600;
+}
+
+.card-text-dark {
+  @apply text-sm text-neutral-700;
+}
+
+/* ==================== Progress Utilities ==================== */
+
+.progress-header {
+  @apply flex justify-between mb-2;
+}
+
+.progress-label {
+  @apply text-sm font-medium text-neutral-700;
+}
+
+.progress-value {
+  @apply text-sm font-medium text-neutral-600;
+}
+
+.progress-label-block {
+  @apply text-sm font-medium text-neutral-700 block mb-2;
+}
+
+/* ==================== Avatar Utilities ==================== */
+
+.avatar-group {
+  @apply flex -space-x-4;
+}
+
+.avatar-bordered {
+  @apply border-4 border-white;
+}
+
+.avatar-bordered-muted {
+  @apply border-4 border-white bg-neutral-200 text-neutral-600;
+}
+
+/* ==================== Icon Utilities ==================== */
+
+.icon-sm {
+  @apply w-4 h-4;
+}
+
+.icon-md {
+  @apply w-5 h-5;
+}
+
+.icon-primary {
+  @apply w-5 h-5 text-primary-600;
+}
+
+.icon-shrink {
+  @apply w-5 h-5 flex-shrink-0;
+}
+
+.icon-inline {
+  @apply w-4 h-4 ml-2 inline;
+}
+
+/* ==================== Skeleton Utilities ==================== */
+
+.skeleton-row {
+  @apply flex items-center gap-3;
+}
+
+.skeleton-content {
+  @apply flex-1 space-y-2;
+}
+
+.skeleton-partial {
+  @apply w-2/3;
+}
+
+/* ==================== Footer ==================== */
+
+.page-footer {
+  @apply bg-white border-t border-neutral-200 mt-20;
+}
+
+.footer-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+.footer-content {
+  @apply flex flex-col md:flex-row items-center justify-between gap-4;
+}
+
+.footer-text {
+  @apply text-sm text-neutral-600;
+}
+
+.footer-links {
+  @apply flex gap-6;
+}
+
+/* ==================== Loading States ==================== */
+
+.loading-container {
+  @apply min-h-screen bg-neutral-50 flex items-center justify-center;
+}
+
+.loading-content {
+  @apply text-center;
+}
+
+.loading-spinner {
+  @apply mb-4;
+}
+
+.loading-text {
+  @apply text-neutral-600 text-sm;
+}

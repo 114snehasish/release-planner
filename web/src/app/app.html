@@ -3,32 +3,32 @@
   <app-header></app-header>
 
   <!-- Main Container -->
-  <div class="min-h-screen bg-neutral-50">
+  <div class="page-container">
 
   <!-- Main Content -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <main class="page-content">
 
     <!-- Hero Section -->
-    <section class="mb-16 text-center">
-      <h2 class="text-5xl sm:text-6xl font-extrabold text-neutral-900 mb-6">
+    <section class="hero">
+      <h2 class="hero-title">
         Beautiful UI Components
       </h2>
-      <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+      <p class="hero-description">
         A comprehensive collection of modern, unique UI components built with Tailwind utilities and &#64;apply directives.
       </p>
     </section>
 
     <!-- Buttons Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-primary">Buttons</span>
       </h3>
 
-      <div class="card card-body space-y-6">
+      <div class="card card-body space-stack-lg">
         <!-- Primary Buttons -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Primary Buttons</h4>
-          <div class="flex flex-wrap gap-3">
+          <h4 class="subsection-title">Primary Buttons</h4>
+          <div class="flex-row-wrap">
             <button class="btn-primary">Primary Button</button>
             <button class="btn-primary btn-sm">Small</button>
             <button class="btn-primary btn-lg">Large</button>
@@ -39,8 +39,8 @@
 
         <!-- Button Variants -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Button Variants</h4>
-          <div class="flex flex-wrap gap-3">
+          <h4 class="subsection-title">Button Variants</h4>
+          <div class="flex-row-wrap">
             <button class="btn-primary">Primary</button>
             <button class="btn-secondary">Secondary</button>
             <button class="btn-outline">Outline</button>
@@ -53,20 +53,20 @@
 
         <!-- Icon Buttons -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Icon Buttons</h4>
-          <div class="flex flex-wrap gap-3">
+          <h4 class="subsection-title">Icon Buttons</h4>
+          <div class="flex-row-wrap">
             <button class="btn-icon">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
               </svg>
             </button>
             <button class="btn-icon-primary">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </button>
             <button class="btn-icon">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
@@ -76,14 +76,14 @@
     </section>
 
     <!-- Input Elements Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-secondary">Inputs</span>
       </h3>
 
-      <div class="card card-body space-y-6">
+      <div class="card card-body space-stack-lg">
         <!-- Text Inputs -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid-2-cols">
           <div class="form-group">
             <label class="form-label">Default Input</label>
             <input type="text" class="input" placeholder="Enter your name">
@@ -109,12 +109,12 @@
         </div>
 
         <!-- Input with Icons -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid-2-cols">
           <div class="form-group">
             <label class="form-label">Search Input</label>
             <div class="input-icon-wrapper">
               <div class="input-icon-left">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
               </div>
@@ -126,7 +126,7 @@
             <label class="form-label">Search (Pill Style)</label>
             <div class="input-icon-wrapper">
               <div class="input-icon-left">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
               </div>
@@ -155,61 +155,61 @@
     </section>
 
     <!-- Checkboxes, Radio & Toggle Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-success">Selection Controls</span>
       </h3>
 
-      <div class="card card-body space-y-6">
+      <div class="card card-body space-stack-lg">
         <!-- Checkboxes -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Checkboxes</h4>
-          <div class="space-y-3">
-            <label class="flex items-center gap-3 cursor-pointer">
+          <h4 class="subsection-title">Checkboxes</h4>
+          <div class="space-stack-sm">
+            <label class="label-inline">
               <input type="checkbox" class="checkbox" checked>
-              <span class="text-sm text-neutral-700">Checked checkbox</span>
+              <span class="label-text">Checked checkbox</span>
             </label>
-            <label class="flex items-center gap-3 cursor-pointer">
+            <label class="label-inline">
               <input type="checkbox" class="checkbox">
-              <span class="text-sm text-neutral-700">Unchecked checkbox</span>
+              <span class="label-text">Unchecked checkbox</span>
             </label>
-            <label class="flex items-center gap-3 cursor-pointer">
+            <label class="label-inline">
               <input type="checkbox" class="checkbox" disabled>
-              <span class="text-sm text-neutral-500">Disabled checkbox</span>
+              <span class="label-text-muted">Disabled checkbox</span>
             </label>
           </div>
         </div>
 
         <!-- Radio Buttons -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Radio Buttons</h4>
-          <div class="space-y-3">
-            <label class="flex items-center gap-3 cursor-pointer">
+          <h4 class="subsection-title">Radio Buttons</h4>
+          <div class="space-stack-sm">
+            <label class="label-inline">
               <input type="radio" name="radio-group" class="radio" checked>
-              <span class="text-sm text-neutral-700">Option 1 (Selected)</span>
+              <span class="label-text">Option 1 (Selected)</span>
             </label>
-            <label class="flex items-center gap-3 cursor-pointer">
+            <label class="label-inline">
               <input type="radio" name="radio-group" class="radio">
-              <span class="text-sm text-neutral-700">Option 2</span>
+              <span class="label-text">Option 2</span>
             </label>
-            <label class="flex items-center gap-3 cursor-pointer">
+            <label class="label-inline">
               <input type="radio" name="radio-group" class="radio">
-              <span class="text-sm text-neutral-700">Option 3</span>
+              <span class="label-text">Option 3</span>
             </label>
           </div>
         </div>
 
         <!-- Toggle Switches -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Toggle Switches</h4>
-          <div class="space-y-3">
-            <label class="flex items-center gap-3 cursor-pointer">
+          <h4 class="subsection-title">Toggle Switches</h4>
+          <div class="space-stack-sm">
+            <label class="label-inline">
               <input type="checkbox" class="toggle" checked>
-              <span class="text-sm text-neutral-700">Enabled</span>
+              <span class="label-text">Enabled</span>
             </label>
-            <label class="flex items-center gap-3 cursor-pointer">
+            <label class="label-inline">
               <input type="checkbox" class="toggle">
-              <span class="text-sm text-neutral-700">Disabled</span>
+              <span class="label-text">Disabled</span>
             </label>
           </div>
         </div>
@@ -217,19 +217,19 @@
     </section>
 
     <!-- Links Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-info">Links</span>
       </h3>
 
-      <div class="card card-body space-y-4">
-        <div class="space-y-3">
+      <div class="card card-body space-stack-md">
+        <div class="space-stack-sm">
           <p><a href="#" class="link">Primary link with hover effect</a></p>
           <p><a href="#" class="link-subtle">Subtle link for secondary actions</a></p>
           <p>
             <a href="#" class="link-icon">
               Link with icon
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
               </svg>
             </a>
@@ -240,15 +240,15 @@
     </section>
 
     <!-- Badges & Tags Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-warning">Badges & Tags</span>
       </h3>
 
-      <div class="card card-body space-y-6">
+      <div class="card card-body space-stack-lg">
         <!-- Standard Badges -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Standard Badges</h4>
+          <h4 class="subsection-title">Standard Badges</h4>
           <div class="flex flex-wrap gap-2">
             <span class="badge">Default</span>
             <span class="badge-primary">Primary</span>
@@ -262,7 +262,7 @@
 
         <!-- Outlined Badges -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Outlined Badges</h4>
+          <h4 class="subsection-title">Outlined Badges</h4>
           <div class="flex flex-wrap gap-2">
             <span class="badge badge-outline">Default</span>
             <span class="badge badge-outline-primary">Primary</span>
@@ -271,7 +271,7 @@
 
         <!-- Badges with Dot Indicator -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Status Badges</h4>
+          <h4 class="subsection-title">Status Badges</h4>
           <div class="flex flex-wrap gap-2">
             <span class="badge-success badge-dot">Active</span>
             <span class="badge-danger badge-dot">Offline</span>
@@ -282,7 +282,7 @@
 
         <!-- Chips -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Chips (Removable)</h4>
+          <h4 class="subsection-title">Chips (Removable)</h4>
           <div class="flex flex-wrap gap-2">
             <span class="chip chip-primary chip-removable">
               JavaScript
@@ -314,19 +314,19 @@
     </section>
 
     <!-- Cards Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-primary">Cards</span>
       </h3>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid-3-cols">
         <!-- Basic Card -->
         <div class="card">
           <div class="card-header">
-            <h4 class="text-lg font-bold text-neutral-900">Basic Card</h4>
+            <h4 class="card-title">Basic Card</h4>
           </div>
           <div class="card-body">
-            <p class="text-sm text-neutral-600">
+            <p class="card-text">
               This is a basic card with header and body sections. Perfect for content display.
             </p>
           </div>
@@ -338,8 +338,8 @@
         <!-- Interactive Card -->
         <div class="card-interactive">
           <div class="card-body">
-            <h4 class="text-lg font-bold text-neutral-900 mb-2">Interactive Card</h4>
-            <p class="text-sm text-neutral-600">
+            <h4 class="card-title-mb">Interactive Card</h4>
+            <p class="card-text">
               Hover over this card to see the interactive effect. Great for clickable items.
             </p>
           </div>
@@ -348,8 +348,8 @@
         <!-- Gradient Card -->
         <div class="card card-gradient">
           <div class="card-body">
-            <h4 class="text-lg font-bold text-neutral-900 mb-2">Gradient Card</h4>
-            <p class="text-sm text-neutral-700">
+            <h4 class="card-title-mb">Gradient Card</h4>
+            <p class="card-text-dark">
               This card has a beautiful gradient background for special content.
             </p>
           </div>
@@ -358,14 +358,14 @@
     </section>
 
     <!-- Alerts Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-danger">Alerts</span>
       </h3>
 
-      <div class="space-y-4">
+      <div class="space-stack-md">
         <div class="alert-info">
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="icon-shrink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
@@ -375,7 +375,7 @@
         </div>
 
         <div class="alert-success">
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="icon-shrink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
@@ -385,7 +385,7 @@
         </div>
 
         <div class="alert-warning">
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="icon-shrink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
           </svg>
           <div>
@@ -395,7 +395,7 @@
         </div>
 
         <div class="alert-danger">
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="icon-shrink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
@@ -407,16 +407,16 @@
     </section>
 
     <!-- Progress Bars Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-secondary">Progress Bars</span>
       </h3>
 
-      <div class="card card-body space-y-6">
+      <div class="card card-body space-stack-lg">
         <div>
-          <div class="flex justify-between mb-2">
-            <span class="text-sm font-medium text-neutral-700">Primary Progress</span>
-            <span class="text-sm font-medium text-neutral-600">75%</span>
+          <div class="progress-header">
+            <span class="progress-label">Primary Progress</span>
+            <span class="progress-value">75%</span>
           </div>
           <div class="progress">
             <div class="progress-bar" style="width: 75%"></div>
@@ -424,9 +424,9 @@
         </div>
 
         <div>
-          <div class="flex justify-between mb-2">
-            <span class="text-sm font-medium text-neutral-700">Success Progress</span>
-            <span class="text-sm font-medium text-neutral-600">90%</span>
+          <div class="progress-header">
+            <span class="progress-label">Success Progress</span>
+            <span class="progress-value">90%</span>
           </div>
           <div class="progress progress-lg">
             <div class="progress-bar progress-bar-success" style="width: 90%"></div>
@@ -434,9 +434,9 @@
         </div>
 
         <div>
-          <div class="flex justify-between mb-2">
-            <span class="text-sm font-medium text-neutral-700">Warning Progress</span>
-            <span class="text-sm font-medium text-neutral-600">45%</span>
+          <div class="progress-header">
+            <span class="progress-label">Warning Progress</span>
+            <span class="progress-value">45%</span>
           </div>
           <div class="progress progress-lg">
             <div class="progress-bar progress-bar-warning" style="width: 45%"></div>
@@ -444,7 +444,7 @@
         </div>
 
         <div>
-          <span class="text-sm font-medium text-neutral-700 block mb-2">Progress with Label</span>
+          <span class="progress-label-block">Progress with Label</span>
           <div class="progress progress-lg">
             <div class="progress-bar progress-labeled" style="width: 60%">60%</div>
           </div>
@@ -453,8 +453,8 @@
     </section>
 
     <!-- Tabs Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-info">Tabs</span>
       </h3>
 
@@ -472,7 +472,7 @@
 
       <div class="card mt-6">
         <div class="card-body">
-          <h4 class="text-lg font-semibold text-neutral-700 mb-4">Pill Style Tabs</h4>
+          <h4 class="subsection-title mb-4">Pill Style Tabs</h4>
           <div class="tabs-pill">
             <button class="tab-pill active">All</button>
             <button class="tab-pill">Active</button>
@@ -484,16 +484,16 @@
     </section>
 
     <!-- Avatars Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-primary">Avatars</span>
       </h3>
 
-      <div class="card card-body space-y-6">
+      <div class="card card-body space-stack-lg">
         <!-- Avatar Sizes -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Avatar Sizes</h4>
-          <div class="flex items-center gap-4">
+          <h4 class="subsection-title">Avatar Sizes</h4>
+          <div class="flex-items-center">
             <div class="avatar avatar-sm">SM</div>
             <div class="avatar">MD</div>
             <div class="avatar avatar-lg">LG</div>
@@ -504,8 +504,8 @@
 
         <!-- Avatars with Status -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Avatars with Status</h4>
-          <div class="flex items-center gap-4">
+          <h4 class="subsection-title">Avatars with Status</h4>
+          <div class="flex-items-center">
             <div class="avatar avatar-lg avatar-status">JS</div>
             <div class="avatar avatar-lg avatar-status avatar-status-offline">AB</div>
             <div class="avatar avatar-lg avatar-status avatar-status-busy">CD</div>
@@ -515,29 +515,29 @@
 
         <!-- Avatar with Images -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Avatar Group</h4>
-          <div class="flex -space-x-4">
-            <div class="avatar avatar-lg border-4 border-white">U1</div>
-            <div class="avatar avatar-lg border-4 border-white">U2</div>
-            <div class="avatar avatar-lg border-4 border-white">U3</div>
-            <div class="avatar avatar-lg border-4 border-white">U4</div>
-            <div class="avatar avatar-lg border-4 border-white bg-neutral-200 text-neutral-600">+5</div>
+          <h4 class="subsection-title">Avatar Group</h4>
+          <div class="avatar-group">
+            <div class="avatar avatar-lg avatar-bordered">U1</div>
+            <div class="avatar avatar-lg avatar-bordered">U2</div>
+            <div class="avatar avatar-lg avatar-bordered">U3</div>
+            <div class="avatar avatar-lg avatar-bordered">U4</div>
+            <div class="avatar avatar-lg avatar-bordered avatar-bordered-muted">+5</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Lists Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-success">Lists</span>
       </h3>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid-2-cols">
         <!-- Basic List -->
         <div class="card">
           <div class="card-header">
-            <h4 class="text-lg font-bold text-neutral-900">Basic List</h4>
+            <h4 class="card-title">Basic List</h4>
           </div>
           <div class="card-body">
             <div class="list">
@@ -557,24 +557,24 @@
         <!-- Interactive List -->
         <div class="card">
           <div class="card-header">
-            <h4 class="text-lg font-bold text-neutral-900">Interactive List</h4>
+            <h4 class="card-title">Interactive List</h4>
           </div>
           <div class="card-body">
             <div class="list">
               <div class="list-item-interactive">
-                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="icon-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                 </svg>
                 <span>Dashboard</span>
               </div>
               <div class="list-item-interactive list-item-active">
-                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="icon-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                 </svg>
                 <span>Projects (Active)</span>
               </div>
               <div class="list-item-interactive">
-                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="icon-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
                 </svg>
                 <span>Team</span>
@@ -586,15 +586,15 @@
     </section>
 
     <!-- Pagination Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-warning">Pagination</span>
       </h3>
 
       <div class="card card-body">
         <nav class="pagination">
           <button class="pagination-item">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
             </svg>
           </button>
@@ -604,7 +604,7 @@
           <button class="pagination-item">4</button>
           <button class="pagination-item">5</button>
           <button class="pagination-item">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </button>
@@ -613,8 +613,8 @@
     </section>
 
     <!-- Breadcrumbs Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-info">Breadcrumbs</span>
       </h3>
 
@@ -632,8 +632,8 @@
     </section>
 
     <!-- Dividers Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-secondary">Dividers</span>
       </h3>
 
@@ -647,16 +647,16 @@
     </section>
 
     <!-- Spinners & Loaders Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-primary">Spinners & Loaders</span>
       </h3>
 
-      <div class="card card-body space-y-6">
+      <div class="card card-body space-stack-lg">
         <!-- Spinners -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Spinners</h4>
-          <div class="flex items-center gap-6">
+          <h4 class="subsection-title">Spinners</h4>
+          <div class="flex-items-center-lg">
             <div class="spinner spinner-sm"></div>
             <div class="spinner"></div>
             <div class="spinner spinner-lg"></div>
@@ -666,7 +666,7 @@
 
         <!-- Dot Loader -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Dot Loader</h4>
+          <h4 class="subsection-title">Dot Loader</h4>
           <div class="loader-dots">
             <span></span>
             <span></span>
@@ -676,16 +676,16 @@
 
         <!-- Skeleton Loaders -->
         <div>
-          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Skeleton Loaders</h4>
-          <div class="space-y-3">
+          <h4 class="subsection-title">Skeleton Loaders</h4>
+          <div class="space-stack-sm">
             <div class="skeleton skeleton-title"></div>
             <div class="skeleton skeleton-text"></div>
             <div class="skeleton skeleton-text"></div>
-            <div class="flex items-center gap-3">
+            <div class="skeleton-row">
               <div class="skeleton skeleton-avatar"></div>
-              <div class="flex-1 space-y-2">
+              <div class="skeleton-content">
                 <div class="skeleton skeleton-text"></div>
-                <div class="skeleton skeleton-text w-2/3"></div>
+                <div class="skeleton skeleton-text skeleton-partial"></div>
               </div>
             </div>
           </div>
@@ -694,17 +694,17 @@
     </section>
 
     <!-- Dropdown Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-danger">Dropdowns</span>
       </h3>
 
       <div class="card card-body">
-        <p class="text-sm text-neutral-600 mb-4">Hover over the button to see the dropdown menu</p>
+        <p class="card-text mb-4">Hover over the button to see the dropdown menu</p>
         <div class="dropdown">
           <button class="btn-outline">
             Open Dropdown
-            <svg class="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="icon-inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
@@ -720,13 +720,13 @@
     </section>
 
     <!-- Tooltips Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+    <section class="section">
+      <h3 class="section-title">
         <span class="badge-success">Tooltips</span>
       </h3>
 
       <div class="card card-body">
-        <p class="text-sm text-neutral-600 mb-4">Hover over the buttons to see tooltips</p>
+        <p class="card-text mb-4">Hover over the buttons to see tooltips</p>
         <div class="flex gap-4">
           <div class="tooltip">
             <button class="btn-primary">Hover Me</button>
@@ -738,7 +738,7 @@
           </div>
           <div class="tooltip">
             <button class="btn-icon-primary">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </button>
@@ -751,13 +751,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-white border-t border-neutral-200 mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-neutral-600">
+  <footer class="page-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <p class="footer-text">
           © 2024 UI Component Library. Built with Tailwind CSS.
         </p>
-        <div class="flex gap-6">
+        <div class="footer-links">
           <a href="#" class="link-subtle text-sm">Documentation</a>
           <a href="#" class="link-subtle text-sm">GitHub</a>
           <a href="#" class="link-subtle text-sm">Support</a>
@@ -768,11 +768,10 @@
 </div>
 } @else {
   <!-- Loading state while initializing authentication -->
-  <div class="min-h-screen bg-neutral-50 flex items-center justify-center">
-    <div class="text-center">
-      <div class="spinner spinner-lg mb-4"></div>
-      <p class="text-neutral-600 text-sm">Initializing authentication...</p>
+  <div class="loading-container">
+    <div class="loading-content">
+      <div class="spinner spinner-lg loading-spinner"></div>
+      <p class="loading-text">Initializing authentication...</p>
     </div>
   </div>
 }
-
