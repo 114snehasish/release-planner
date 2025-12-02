@@ -3,6 +3,14 @@
   <component name="CopilotDiffPersistence">
     <option name="pendingDiffs">
       <map>
+        <entry key="$PROJECT_DIR$/src/app/app.ts">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/app/app.ts" />
+              <option name="updatedContent" value="// ...existing code...&#10;@Component({&#10;  // ...existing code...&#10;  // Remove the imports line completely&#10;})&#10;// ...existing code...&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/web/karma.conf.js">
           <value>
             <PendingDiffInfo>
