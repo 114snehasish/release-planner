@@ -1,27 +1,21 @@
 <!-- Main Container -->
-<div class="min-h-screen bg-neutral-50 dark:bg-neutral-950">
+<div class="min-h-screen bg-neutral-50">
   <!-- Header -->
-  <header class="bg-white dark:bg-neutral-900 shadow-sm border-b border-neutral-200 dark:border-neutral-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <header class="bg-white shadow-sm border-b border-neutral-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="flex items-center justify-between">
         <div>
-          <h1 class="text-4xl font-bold text-primary-600 dark:text-primary-400">
-            Release Planner
+          <h1 class="text-3xl font-bold text-primary-600">
+            UI Component Library
           </h1>
-          <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-1">
-            Tailwind 4 + CSS Variables Demo
+          <p class="text-sm text-neutral-600 mt-1">
+            Modern & Unique Design System
           </p>
         </div>
-        <nav class="flex gap-4">
-          <a href="#" class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-            Home
-          </a>
-          <a href="#" class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-            Releases
-          </a>
-          <a href="#" class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-            About
-          </a>
+        <nav class="flex gap-3">
+          <button class="btn-ghost btn-sm">Home</button>
+          <button class="btn-ghost btn-sm">Components</button>
+          <button class="btn-primary btn-sm">Get Started</button>
         </nav>
       </div>
     </div>
@@ -31,271 +25,349 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
     <!-- Hero Section -->
-    <section class="mb-16">
-      <div class="text-center">
-        <h2 class="text-5xl sm:text-6xl font-extrabold text-neutral-900 dark:text-neutral-50 mb-6 text-balance">
-          Beautiful Design System
-        </h2>
-        <p class="text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto mb-8 text-pretty">
-          Experience the power of centralized CSS variables combined with Tailwind 4's utility classes.
-          Every color, spacing, and typography setting is managed from a single source of truth.
-        </p>
-        <div class="flex gap-4 justify-center flex-wrap">
-          <button class="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all">
-            Get Started
-          </button>
-          <button class="bg-secondary-600 hover:bg-secondary-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all">
-            Learn More
-          </button>
-          <button class="bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-600 text-neutral-900 dark:text-neutral-100 font-semibold px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-all">
-            Documentation
-          </button>
-        </div>
-      </div>
+    <section class="mb-16 text-center">
+      <h2 class="text-5xl sm:text-6xl font-extrabold text-neutral-900 mb-6">
+        Beautiful UI Components
+      </h2>
+      <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+        A comprehensive collection of modern, unique UI components built with Tailwind utilities and &#64;apply directives.
+      </p>
     </section>
 
-    <!-- Color Palette Section -->
+    <!-- Buttons Section -->
     <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-6">
-        Color Palette
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-primary">Buttons</span>
       </h3>
 
-      <!-- Primary Colors -->
-      <div class="mb-8">
-        <h4 class="text-lg font-semibold text-neutral-700 dark:text-neutral-300 mb-3">Primary</h4>
-        <div class="grid grid-cols-5 sm:grid-cols-11 gap-2">
-          <div class="space-y-1">
-            <div class="bg-primary-50 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">50</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-100 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">100</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-200 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">200</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-300 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">300</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-400 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">400</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-500 h-16 rounded-lg shadow-sm border-2 border-neutral-900 dark:border-white"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400 font-bold">500</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-600 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">600</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-700 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">700</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-800 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">800</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-900 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">900</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-primary-950 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">950</p>
+      <div class="card card-body space-y-6">
+        <!-- Primary Buttons -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Primary Buttons</h4>
+          <div class="flex flex-wrap gap-3">
+            <button class="btn-primary">Primary Button</button>
+            <button class="btn-primary btn-sm">Small</button>
+            <button class="btn-primary btn-lg">Large</button>
+            <button class="btn-primary btn-xl">Extra Large</button>
+            <button class="btn-primary" disabled>Disabled</button>
           </div>
         </div>
-      </div>
 
-      <!-- Secondary Colors -->
-      <div class="mb-8">
-        <h4 class="text-lg font-semibold text-neutral-700 dark:text-neutral-300 mb-3">Secondary</h4>
-        <div class="grid grid-cols-5 sm:grid-cols-11 gap-2">
-          <div class="space-y-1">
-            <div class="bg-secondary-50 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">50</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-100 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">100</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-200 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">200</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-300 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">300</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-400 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">400</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-500 h-16 rounded-lg shadow-sm border-2 border-neutral-900 dark:border-white"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400 font-bold">500</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-600 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">600</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-700 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">700</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-800 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">800</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-900 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">900</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-secondary-950 h-16 rounded-lg shadow-sm"></div>
-            <p class="text-xs text-center text-neutral-600 dark:text-neutral-400">950</p>
+        <!-- Button Variants -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Button Variants</h4>
+          <div class="flex flex-wrap gap-3">
+            <button class="btn-primary">Primary</button>
+            <button class="btn-secondary">Secondary</button>
+            <button class="btn-outline">Outline</button>
+            <button class="btn-ghost">Ghost</button>
+            <button class="btn-success">Success</button>
+            <button class="btn-warning">Warning</button>
+            <button class="btn-danger">Danger</button>
           </div>
         </div>
-      </div>
 
-      <!-- Semantic Colors -->
-      <div>
-        <h4 class="text-lg font-semibold text-neutral-700 dark:text-neutral-300 mb-3">Semantic Colors</h4>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div class="bg-success-50 dark:bg-success-700 border border-success-200 dark:border-success-600 rounded-lg p-4">
-            <div class="w-12 h-12 bg-success-500 rounded-lg mb-2"></div>
-            <p class="font-semibold text-success-900 dark:text-success-100">Success</p>
-          </div>
-          <div class="bg-warning-50 dark:bg-warning-700 border border-warning-200 dark:border-warning-600 rounded-lg p-4">
-            <div class="w-12 h-12 bg-warning-500 rounded-lg mb-2"></div>
-            <p class="font-semibold text-warning-900 dark:text-warning-100">Warning</p>
-          </div>
-          <div class="bg-error-50 dark:bg-error-700 border border-error-200 dark:border-error-600 rounded-lg p-4">
-            <div class="w-12 h-12 bg-error-500 rounded-lg mb-2"></div>
-            <p class="font-semibold text-error-900 dark:text-error-100">Error</p>
-          </div>
-          <div class="bg-info-50 dark:bg-info-700 border border-info-200 dark:border-info-600 rounded-lg p-4">
-            <div class="w-12 h-12 bg-info-500 rounded-lg mb-2"></div>
-            <p class="font-semibold text-info-900 dark:text-info-100">Info</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Typography Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-6">
-        Typography
-      </h3>
-      <div class="space-y-4 bg-white dark:bg-neutral-900 rounded-xl p-8 shadow-lg">
-        <p class="text-7xl font-black text-neutral-900 dark:text-neutral-50">Heading 7XL</p>
-        <p class="text-6xl font-bold text-neutral-900 dark:text-neutral-50">Heading 6XL</p>
-        <p class="text-5xl font-bold text-neutral-900 dark:text-neutral-50">Heading 5XL</p>
-        <p class="text-4xl font-bold text-neutral-900 dark:text-neutral-50">Heading 4XL</p>
-        <p class="text-3xl font-semibold text-neutral-900 dark:text-neutral-50">Heading 3XL</p>
-        <p class="text-2xl font-semibold text-neutral-900 dark:text-neutral-50">Heading 2XL</p>
-        <p class="text-xl font-semibold text-neutral-900 dark:text-neutral-50">Heading XL</p>
-        <p class="text-lg font-medium text-neutral-900 dark:text-neutral-50">Heading LG</p>
-        <p class="text-base font-normal text-neutral-700 dark:text-neutral-300">Body text base - The quick brown fox jumps over the lazy dog.</p>
-        <p class="text-sm font-normal text-neutral-600 dark:text-neutral-400">Small text - Perfect for captions and supporting information.</p>
-        <p class="text-xs font-normal text-neutral-500 dark:text-neutral-500">Extra small text - Use sparingly for legal or fine print.</p>
-        <p class="font-mono text-base text-primary-600 dark:text-primary-400">Monospace font for code: console.log('Hello World');</p>
-      </div>
-    </section>
-
-    <!-- Component Cards Section -->
-    <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-6">
-        Component Examples
-      </h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <!-- Card 1 -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-primary-400 to-primary-600"></div>
-          <div class="p-6">
-            <h4 class="text-xl font-bold text-neutral-900 dark:text-neutral-50 mb-2">
-              Feature Card
-            </h4>
-            <p class="text-neutral-600 dark:text-neutral-400 mb-4">
-              This card demonstrates elevation, spacing, and color usage from our centralized variables.
-            </p>
-            <button class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors w-full">
-              Action
+        <!-- Icon Buttons -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Icon Buttons</h4>
+          <div class="flex flex-wrap gap-3">
+            <button class="btn-icon">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+              </svg>
             </button>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-secondary-400 to-secondary-600"></div>
-          <div class="p-6">
-            <h4 class="text-xl font-bold text-neutral-900 dark:text-neutral-50 mb-2">
-              Release Planning
-            </h4>
-            <p class="text-neutral-600 dark:text-neutral-400 mb-4">
-              Beautiful cards with consistent spacing and typography make your content shine.
-            </p>
-            <button class="bg-secondary-600 hover:bg-secondary-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors w-full">
-              Plan Release
+            <button class="btn-icon-primary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
             </button>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-accent-400 to-accent-600"></div>
-          <div class="p-6">
-            <h4 class="text-xl font-bold text-neutral-900 dark:text-neutral-50 mb-2">
-              Team Collaboration
-            </h4>
-            <p class="text-neutral-600 dark:text-neutral-400 mb-4">
-              Responsive design ensures a great experience across all device sizes.
-            </p>
-            <button class="bg-accent-600 hover:bg-accent-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors w-full">
-              Collaborate
+            <button class="btn-icon">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
             </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Spacing & Borders Section -->
+    <!-- Input Elements Section -->
     <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-6">
-        Spacing & Borders
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-secondary">Inputs</span>
       </h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <!-- Border Radius -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl p-6 shadow-lg">
-          <h4 class="text-lg font-semibold text-neutral-900 dark:text-neutral-50 mb-4">Border Radius</h4>
+      <div class="card card-body space-y-6">
+        <!-- Text Inputs -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="form-group">
+            <label class="form-label">Default Input</label>
+            <input type="text" class="input" placeholder="Enter your name">
+            <p class="form-hint">This is a hint text</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="input" placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Success State</label>
+            <input type="text" class="input input-success" value="Valid input" placeholder="Success">
+            <p class="form-hint text-success-600">✓ Looks good!</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Error State</label>
+            <input type="text" class="input input-error" value="Invalid input" placeholder="Error">
+            <p class="form-error">✗ This field is required</p>
+          </div>
+        </div>
+
+        <!-- Input with Icons -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="form-group">
+            <label class="form-label">Search Input</label>
+            <div class="input-icon-wrapper">
+              <div class="input-icon-left">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <input type="text" class="input input-with-icon-left" placeholder="Search...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Search (Pill Style)</label>
+            <div class="input-icon-wrapper">
+              <div class="input-icon-left">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <input type="text" class="input-search" placeholder="Search anything...">
+            </div>
+          </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="textarea" placeholder="Enter your message here..."></textarea>
+        </div>
+
+        <!-- Select Dropdown -->
+        <div class="form-group">
+          <label class="form-label">Select Option</label>
+          <select class="select">
+            <option>Choose an option</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkboxes, Radio & Toggle Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-success">Selection Controls</span>
+      </h3>
+
+      <div class="card card-body space-y-6">
+        <!-- Checkboxes -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Checkboxes</h4>
           <div class="space-y-3">
-            <div class="bg-primary-100 dark:bg-primary-900 rounded-sm p-3 text-center text-neutral-900 dark:text-neutral-50">rounded-sm</div>
-            <div class="bg-primary-100 dark:bg-primary-900 rounded p-3 text-center text-neutral-900 dark:text-neutral-50">rounded</div>
-            <div class="bg-primary-100 dark:bg-primary-900 rounded-md p-3 text-center text-neutral-900 dark:text-neutral-50">rounded-md</div>
-            <div class="bg-primary-100 dark:bg-primary-900 rounded-lg p-3 text-center text-neutral-900 dark:text-neutral-50">rounded-lg</div>
-            <div class="bg-primary-100 dark:bg-primary-900 rounded-xl p-3 text-center text-neutral-900 dark:text-neutral-50">rounded-xl</div>
-            <div class="bg-primary-100 dark:bg-primary-900 rounded-2xl p-3 text-center text-neutral-900 dark:text-neutral-50">rounded-2xl</div>
-            <div class="bg-primary-100 dark:bg-primary-900 rounded-3xl p-3 text-center text-neutral-900 dark:text-neutral-50">rounded-3xl</div>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="checkbox" checked>
+              <span class="text-sm text-neutral-700">Checked checkbox</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="checkbox">
+              <span class="text-sm text-neutral-700">Unchecked checkbox</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="checkbox" disabled>
+              <span class="text-sm text-neutral-500">Disabled checkbox</span>
+            </label>
           </div>
         </div>
 
-        <!-- Shadows -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl p-6 shadow-lg">
-          <h4 class="text-lg font-semibold text-neutral-900 dark:text-neutral-50 mb-4">Shadow Elevation</h4>
-          <div class="space-y-4">
-            <div class="bg-neutral-50 dark:bg-neutral-800 shadow-xs p-3 rounded-lg text-center text-neutral-900 dark:text-neutral-50">shadow-xs</div>
-            <div class="bg-neutral-50 dark:bg-neutral-800 shadow-sm p-3 rounded-lg text-center text-neutral-900 dark:text-neutral-50">shadow-sm</div>
-            <div class="bg-neutral-50 dark:bg-neutral-800 shadow p-3 rounded-lg text-center text-neutral-900 dark:text-neutral-50">shadow</div>
-            <div class="bg-neutral-50 dark:bg-neutral-800 shadow-md p-3 rounded-lg text-center text-neutral-900 dark:text-neutral-50">shadow-md</div>
-            <div class="bg-neutral-50 dark:bg-neutral-800 shadow-lg p-3 rounded-lg text-center text-neutral-900 dark:text-neutral-50">shadow-lg</div>
-            <div class="bg-neutral-50 dark:bg-neutral-800 shadow-xl p-3 rounded-lg text-center text-neutral-900 dark:text-neutral-50">shadow-xl</div>
-            <div class="bg-neutral-50 dark:bg-neutral-800 shadow-2xl p-3 rounded-lg text-center text-neutral-900 dark:text-neutral-50">shadow-2xl</div>
+        <!-- Radio Buttons -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Radio Buttons</h4>
+          <div class="space-y-3">
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="radio" name="radio-group" class="radio" checked>
+              <span class="text-sm text-neutral-700">Option 1 (Selected)</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="radio" name="radio-group" class="radio">
+              <span class="text-sm text-neutral-700">Option 2</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="radio" name="radio-group" class="radio">
+              <span class="text-sm text-neutral-700">Option 3</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Toggle Switches -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Toggle Switches</h4>
+          <div class="space-y-3">
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="toggle" checked>
+              <span class="text-sm text-neutral-700">Enabled</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="toggle">
+              <span class="text-sm text-neutral-700">Disabled</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-info">Links</span>
+      </h3>
+
+      <div class="card card-body space-y-4">
+        <div class="space-y-3">
+          <p><a href="#" class="link">Primary link with hover effect</a></p>
+          <p><a href="#" class="link-subtle">Subtle link for secondary actions</a></p>
+          <p>
+            <a href="#" class="link-icon">
+              Link with icon
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </p>
+          <p><a href="#" class="link-animated">Animated underline link</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Badges & Tags Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-warning">Badges & Tags</span>
+      </h3>
+
+      <div class="card card-body space-y-6">
+        <!-- Standard Badges -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Standard Badges</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">Default</span>
+            <span class="badge-primary">Primary</span>
+            <span class="badge-secondary">Secondary</span>
+            <span class="badge-success">Success</span>
+            <span class="badge-warning">Warning</span>
+            <span class="badge-danger">Danger</span>
+            <span class="badge-info">Info</span>
+          </div>
+        </div>
+
+        <!-- Outlined Badges -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Outlined Badges</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge badge-outline">Default</span>
+            <span class="badge badge-outline-primary">Primary</span>
+          </div>
+        </div>
+
+        <!-- Badges with Dot Indicator -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Status Badges</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge-success badge-dot">Active</span>
+            <span class="badge-danger badge-dot">Offline</span>
+            <span class="badge-warning badge-dot">Pending</span>
+            <span class="badge-info badge-dot">Processing</span>
+          </div>
+        </div>
+
+        <!-- Chips -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Chips (Removable)</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip chip-primary chip-removable">
+              JavaScript
+              <button class="chip-remove">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </span>
+            <span class="chip chip-removable">
+              TypeScript
+              <button class="chip-remove">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </span>
+            <span class="chip chip-removable">
+              Angular
+              <button class="chip-remove">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-primary">Cards</span>
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Basic Card -->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-lg font-bold text-neutral-900">Basic Card</h4>
+          </div>
+          <div class="card-body">
+            <p class="text-sm text-neutral-600">
+              This is a basic card with header and body sections. Perfect for content display.
+            </p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-primary btn-sm">Action</button>
+          </div>
+        </div>
+
+        <!-- Interactive Card -->
+        <div class="card-interactive">
+          <div class="card-body">
+            <h4 class="text-lg font-bold text-neutral-900 mb-2">Interactive Card</h4>
+            <p class="text-sm text-neutral-600">
+              Hover over this card to see the interactive effect. Great for clickable items.
+            </p>
+          </div>
+        </div>
+
+        <!-- Gradient Card -->
+        <div class="card card-gradient">
+          <div class="card-body">
+            <h4 class="text-lg font-bold text-neutral-900 mb-2">Gradient Card</h4>
+            <p class="text-sm text-neutral-700">
+              This card has a beautiful gradient background for special content.
+            </p>
           </div>
         </div>
       </div>
@@ -303,172 +375,411 @@
 
     <!-- Alerts Section -->
     <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-6">
-        Alert Components
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-danger">Alerts</span>
       </h3>
+
       <div class="space-y-4">
+        <div class="alert-info">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div>
+            <div class="alert-title">Information</div>
+            <div class="alert-content">This is an informational message with helpful details.</div>
+          </div>
+        </div>
 
-        <!-- Success Alert -->
-        <div class="bg-success-50 dark:bg-success-900/20 border-l-4 border-success-500 p-4 rounded-lg">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <svg class="h-5 w-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-success-800 dark:text-success-200">
-                Success! Your changes have been saved successfully.
-              </p>
+        <div class="alert-success">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div>
+            <div class="alert-title">Success!</div>
+            <div class="alert-content">Your changes have been saved successfully.</div>
+          </div>
+        </div>
+
+        <div class="alert-warning">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          <div>
+            <div class="alert-title">Warning</div>
+            <div class="alert-content">Please review the information before proceeding.</div>
+          </div>
+        </div>
+
+        <div class="alert-danger">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div>
+            <div class="alert-title">Error</div>
+            <div class="alert-content">An error occurred while processing your request.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress Bars Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-secondary">Progress Bars</span>
+      </h3>
+
+      <div class="card card-body space-y-6">
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-sm font-medium text-neutral-700">Primary Progress</span>
+            <span class="text-sm font-medium text-neutral-600">75%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-sm font-medium text-neutral-700">Success Progress</span>
+            <span class="text-sm font-medium text-neutral-600">90%</span>
+          </div>
+          <div class="progress progress-lg">
+            <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-sm font-medium text-neutral-700">Warning Progress</span>
+            <span class="text-sm font-medium text-neutral-600">45%</span>
+          </div>
+          <div class="progress progress-lg">
+            <div class="progress-bar progress-bar-warning" style="width: 45%"></div>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-sm font-medium text-neutral-700 block mb-2">Progress with Label</span>
+          <div class="progress progress-lg">
+            <div class="progress-bar progress-labeled" style="width: 60%">60%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-info">Tabs</span>
+      </h3>
+
+      <div class="card">
+        <div class="tabs px-6">
+          <button class="tab active">Overview</button>
+          <button class="tab">Features</button>
+          <button class="tab">Pricing</button>
+          <button class="tab">Documentation</button>
+        </div>
+        <div class="card-body">
+          <p class="text-neutral-600">Tab content goes here. Click on different tabs to switch content.</p>
+        </div>
+      </div>
+
+      <div class="card mt-6">
+        <div class="card-body">
+          <h4 class="text-lg font-semibold text-neutral-700 mb-4">Pill Style Tabs</h4>
+          <div class="tabs-pill">
+            <button class="tab-pill active">All</button>
+            <button class="tab-pill">Active</button>
+            <button class="tab-pill">Completed</button>
+            <button class="tab-pill">Archived</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avatars Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-primary">Avatars</span>
+      </h3>
+
+      <div class="card card-body space-y-6">
+        <!-- Avatar Sizes -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Avatar Sizes</h4>
+          <div class="flex items-center gap-4">
+            <div class="avatar avatar-sm">SM</div>
+            <div class="avatar">MD</div>
+            <div class="avatar avatar-lg">LG</div>
+            <div class="avatar avatar-xl">XL</div>
+            <div class="avatar avatar-2xl">2XL</div>
+          </div>
+        </div>
+
+        <!-- Avatars with Status -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Avatars with Status</h4>
+          <div class="flex items-center gap-4">
+            <div class="avatar avatar-lg avatar-status">JS</div>
+            <div class="avatar avatar-lg avatar-status avatar-status-offline">AB</div>
+            <div class="avatar avatar-lg avatar-status avatar-status-busy">CD</div>
+            <div class="avatar avatar-lg avatar-status avatar-status-away">EF</div>
+          </div>
+        </div>
+
+        <!-- Avatar with Images -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Avatar Group</h4>
+          <div class="flex -space-x-4">
+            <div class="avatar avatar-lg border-4 border-white">U1</div>
+            <div class="avatar avatar-lg border-4 border-white">U2</div>
+            <div class="avatar avatar-lg border-4 border-white">U3</div>
+            <div class="avatar avatar-lg border-4 border-white">U4</div>
+            <div class="avatar avatar-lg border-4 border-white bg-neutral-200 text-neutral-600">+5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lists Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-success">Lists</span>
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Basic List -->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-lg font-bold text-neutral-900">Basic List</h4>
+          </div>
+          <div class="card-body">
+            <div class="list">
+              <div class="list-item">
+                <span>List item 1</span>
+              </div>
+              <div class="list-item">
+                <span>List item 2</span>
+              </div>
+              <div class="list-item">
+                <span>List item 3</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Warning Alert -->
-        <div class="bg-warning-50 dark:bg-warning-900/20 border-l-4 border-warning-500 p-4 rounded-lg">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <svg class="h-5 w-5 text-warning-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-warning-800 dark:text-warning-200">
-                Warning! Please review the following items before proceeding.
-              </p>
-            </div>
+        <!-- Interactive List -->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-lg font-bold text-neutral-900">Interactive List</h4>
           </div>
-        </div>
-
-        <!-- Error Alert -->
-        <div class="bg-error-50 dark:bg-error-900/20 border-l-4 border-error-500 p-4 rounded-lg">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <svg class="h-5 w-5 text-error-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-error-800 dark:text-error-200">
-                Error! There was a problem processing your request.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Info Alert -->
-        <div class="bg-info-50 dark:bg-info-900/20 border-l-4 border-info-500 p-4 rounded-lg">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <svg class="h-5 w-5 text-info-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-info-800 dark:text-info-200">
-                Info: You have 3 pending releases awaiting approval.
-              </p>
+          <div class="card-body">
+            <div class="list">
+              <div class="list-item-interactive">
+                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                </svg>
+                <span>Dashboard</span>
+              </div>
+              <div class="list-item-interactive list-item-active">
+                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                <span>Projects (Active)</span>
+              </div>
+              <div class="list-item-interactive">
+                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <span>Team</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Form Elements Section -->
+    <!-- Pagination Section -->
     <section class="mb-16">
-      <h3 class="text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-6">
-        Form Elements
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-warning">Pagination</span>
       </h3>
-      <div class="bg-white dark:bg-neutral-900 rounded-xl p-8 shadow-lg max-w-2xl">
-        <form class="space-y-6">
 
-          <!-- Text Input -->
-          <div>
-            <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
-              Release Name
-            </label>
-            <input
-              type="text"
-              placeholder="Enter release name"
-              class="w-full px-4 py-3 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-neutral-900 dark:text-neutral-50 placeholder-neutral-400 dark:placeholder-neutral-500"
-            />
+      <div class="card card-body">
+        <nav class="pagination">
+          <button class="pagination-item">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="pagination-item">1</button>
+          <button class="pagination-item active">2</button>
+          <button class="pagination-item">3</button>
+          <button class="pagination-item">4</button>
+          <button class="pagination-item">5</button>
+          <button class="pagination-item">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Breadcrumbs Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-info">Breadcrumbs</span>
+      </h3>
+
+      <div class="card card-body">
+        <nav class="breadcrumb">
+          <a href="#" class="breadcrumb-item">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="#" class="breadcrumb-item">Projects</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="#" class="breadcrumb-item">Web Development</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-item active">Current Page</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Dividers Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-secondary">Dividers</span>
+      </h3>
+
+      <div class="card card-body">
+        <p class="text-neutral-600">Content above divider</p>
+        <div class="divider"></div>
+        <p class="text-neutral-600">Content below divider</p>
+        <div class="divider-text"><span>OR</span></div>
+        <p class="text-neutral-600">Content below text divider</p>
+      </div>
+    </section>
+
+    <!-- Spinners & Loaders Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-primary">Spinners & Loaders</span>
+      </h3>
+
+      <div class="card card-body space-y-6">
+        <!-- Spinners -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Spinners</h4>
+          <div class="flex items-center gap-6">
+            <div class="spinner spinner-sm"></div>
+            <div class="spinner"></div>
+            <div class="spinner spinner-lg"></div>
+            <div class="spinner spinner-xl"></div>
           </div>
+        </div>
 
-          <!-- Select -->
-          <div>
-            <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
-              Priority
-            </label>
-            <select class="w-full px-4 py-3 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-neutral-900 dark:text-neutral-50">
-              <option>High</option>
-              <option>Medium</option>
-              <option>Low</option>
-            </select>
+        <!-- Dot Loader -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Dot Loader</h4>
+          <div class="loader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+        </div>
 
-          <!-- Textarea -->
-          <div>
-            <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
-              Description
-            </label>
-            <textarea
-              rows="4"
-              placeholder="Describe the release..."
-              class="w-full px-4 py-3 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-neutral-900 dark:text-neutral-50 placeholder-neutral-400 dark:placeholder-neutral-500"
-            ></textarea>
-          </div>
-
-          <!-- Checkboxes -->
-          <div>
-            <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
-              Features
-            </label>
-            <div class="space-y-2">
-              <label class="flex items-center">
-                <input type="checkbox" class="w-4 h-4 text-primary-600 bg-neutral-50 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 rounded focus:ring-2 focus:ring-primary-500">
-                <span class="ml-2 text-neutral-700 dark:text-neutral-300">API Updates</span>
-              </label>
-              <label class="flex items-center">
-                <input type="checkbox" class="w-4 h-4 text-primary-600 bg-neutral-50 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 rounded focus:ring-2 focus:ring-primary-500">
-                <span class="ml-2 text-neutral-700 dark:text-neutral-300">UI Improvements</span>
-              </label>
-              <label class="flex items-center">
-                <input type="checkbox" class="w-4 h-4 text-primary-600 bg-neutral-50 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 rounded focus:ring-2 focus:ring-primary-500">
-                <span class="ml-2 text-neutral-700 dark:text-neutral-300">Bug Fixes</span>
-              </label>
+        <!-- Skeleton Loaders -->
+        <div>
+          <h4 class="text-lg font-semibold text-neutral-700 mb-3">Skeleton Loaders</h4>
+          <div class="space-y-3">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="flex items-center gap-3">
+              <div class="skeleton skeleton-avatar"></div>
+              <div class="flex-1 space-y-2">
+                <div class="skeleton skeleton-text"></div>
+                <div class="skeleton skeleton-text w-2/3"></div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Buttons -->
-          <div class="flex gap-4">
-            <button type="submit" class="flex-1 bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all">
-              Create Release
-            </button>
-            <button type="button" class="flex-1 bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700 text-neutral-900 dark:text-neutral-100 font-semibold px-6 py-3 rounded-lg transition-all">
-              Cancel
-            </button>
+    <!-- Dropdown Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-danger">Dropdowns</span>
+      </h3>
+
+      <div class="card card-body">
+        <p class="text-sm text-neutral-600 mb-4">Hover over the button to see the dropdown menu</p>
+        <div class="dropdown">
+          <button class="btn-outline">
+            Open Dropdown
+            <svg class="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <button class="dropdown-item">Profile</button>
+            <button class="dropdown-item">Settings</button>
+            <button class="dropdown-item">Help Center</button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item">Sign Out</button>
           </div>
-        </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tooltips Section -->
+    <section class="mb-16">
+      <h3 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+        <span class="badge-success">Tooltips</span>
+      </h3>
+
+      <div class="card card-body">
+        <p class="text-sm text-neutral-600 mb-4">Hover over the buttons to see tooltips</p>
+        <div class="flex gap-4">
+          <div class="tooltip">
+            <button class="btn-primary">Hover Me</button>
+            <div class="tooltip-content">This is a helpful tooltip!</div>
+          </div>
+          <div class="tooltip">
+            <button class="btn-secondary">Info</button>
+            <div class="tooltip-content">More information here</div>
+          </div>
+          <div class="tooltip">
+            <button class="btn-icon-primary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </button>
+            <div class="tooltip-content">Need help?</div>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-neutral-900 dark:bg-neutral-950 text-neutral-300 py-12 mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center">
-        <p class="text-lg font-semibold mb-2">Release Planner</p>
-        <p class="text-sm text-neutral-400">
-          Built with Tailwind 4 + CSS Variables | Fully Responsive | Dark Mode Ready
+  <footer class="bg-white border-t border-neutral-200 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-neutral-600">
+          © 2024 UI Component Library. Built with Tailwind CSS.
         </p>
-        <p class="text-xs text-neutral-500 mt-4">
-          All colors, spacing, typography, and design tokens are centralized in styles.scss
-        </p>
+        <div class="flex gap-6">
+          <a href="#" class="link-subtle text-sm">Documentation</a>
+          <a href="#" class="link-subtle text-sm">GitHub</a>
+          <a href="#" class="link-subtle text-sm">Support</a>
+        </div>
       </div>
     </div>
   </footer>
 </div>
-
-<router-outlet />
 

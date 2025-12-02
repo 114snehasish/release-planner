@@ -458,7 +458,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans), serif;
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
   color: var(--color-text-primary);
@@ -476,5 +476,884 @@ body {
 
 .text-pretty {
   text-wrap: pretty;
+}
+
+/* ============================================
+   UI COMPONENT CLASSES
+   ============================================ */
+
+/* ==================== BUTTONS ==================== */
+
+/* Primary Button - Modern with gradient hover effect */
+.btn-primary {
+  @apply px-6 py-3 text-sm font-semibold text-white;
+  @apply bg-gradient-to-r from-primary-600 to-primary-500;
+  @apply rounded-xl shadow-md;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-lg hover:scale-105 hover:from-primary-700 hover:to-primary-600;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-primary-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+}
+
+/* Secondary Button - Outlined with fill on hover */
+.btn-secondary {
+  @apply px-6 py-3 text-sm font-semibold text-secondary-700;
+  @apply bg-transparent border-2 border-secondary-500;
+  @apply rounded-xl shadow-sm;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:bg-secondary-500 hover:text-white hover:shadow-md hover:scale-105;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-secondary-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+}
+
+/* Outline Button - Subtle with border */
+.btn-outline {
+  @apply px-6 py-3 text-sm font-semibold text-neutral-700;
+  @apply bg-white border-2 border-neutral-300;
+  @apply rounded-xl shadow-sm;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:border-neutral-400 hover:bg-neutral-50 hover:shadow-md;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-neutral-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Ghost Button - Minimal with hover background */
+.btn-ghost {
+  @apply px-6 py-3 text-sm font-semibold text-neutral-700;
+  @apply bg-transparent;
+  @apply rounded-xl;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:bg-neutral-100 hover:text-neutral-900;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-neutral-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Success Button */
+.btn-success {
+  @apply px-6 py-3 text-sm font-semibold text-white;
+  @apply bg-gradient-to-r from-success-600 to-success-500;
+  @apply rounded-xl shadow-md;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-lg hover:scale-105 hover:from-success-700 hover:to-success-600;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-success-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+}
+
+/* Danger Button */
+.btn-danger {
+  @apply px-6 py-3 text-sm font-semibold text-white;
+  @apply bg-gradient-to-r from-error-600 to-error-500;
+  @apply rounded-xl shadow-md;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-lg hover:scale-105 hover:from-error-700 hover:to-error-600;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-error-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+}
+
+/* Warning Button */
+.btn-warning {
+  @apply px-6 py-3 text-sm font-semibold text-white;
+  @apply bg-gradient-to-r from-warning-600 to-warning-500;
+  @apply rounded-xl shadow-md;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-lg hover:scale-105 hover:from-warning-700 hover:to-warning-600;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-warning-200;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+}
+
+/* Button Size Variants */
+.btn-sm {
+  @apply px-4 py-2 text-xs;
+}
+
+.btn-lg {
+  @apply px-8 py-4 text-base;
+}
+
+.btn-xl {
+  @apply px-10 py-5 text-lg;
+}
+
+/* Icon Button - Circular for icons */
+.btn-icon {
+  @apply p-3 rounded-full;
+  @apply bg-neutral-100 text-neutral-700;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:bg-neutral-200 hover:scale-110;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-neutral-200;
+}
+
+.btn-icon-primary {
+  @apply p-3 rounded-full;
+  @apply bg-primary-100 text-primary-700;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:bg-primary-200 hover:scale-110;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-primary-200;
+}
+
+/* ==================== INPUT ELEMENTS ==================== */
+
+/* Text Input - Modern with floating effect on focus */
+.input {
+  @apply w-full px-4 py-3 text-sm;
+  @apply bg-white text-neutral-900;
+  @apply border-2 border-neutral-300 rounded-xl;
+  @apply transition-all duration-200 ease-out;
+  @apply placeholder:text-neutral-400;
+  @apply hover:border-neutral-400;
+  @apply focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-100;
+  @apply disabled:bg-neutral-100 disabled:cursor-not-allowed disabled:text-neutral-500;
+}
+
+/* Input with Icon Container */
+.input-icon-wrapper {
+  @apply relative;
+}
+
+.input-icon-left {
+  @apply absolute left-4 top-1/2 -translate-y-1/2;
+  @apply text-neutral-400 pointer-events-none;
+}
+
+.input-icon-right {
+  @apply absolute right-4 top-1/2 -translate-y-1/2;
+  @apply text-neutral-400;
+}
+
+.input-with-icon-left {
+  @apply pl-12;
+}
+
+.input-with-icon-right {
+  @apply pr-12;
+}
+
+/* Input Variants */
+.input-success {
+  @apply border-success-500 focus:border-success-600 focus:ring-success-100;
+}
+
+.input-error {
+  @apply border-error-500 focus:border-error-600 focus:ring-error-100;
+}
+
+.input-warning {
+  @apply border-warning-500 focus:border-warning-600 focus:ring-warning-100;
+}
+
+/* Textarea */
+.textarea {
+  @apply w-full px-4 py-3 text-sm;
+  @apply bg-white text-neutral-900;
+  @apply border-2 border-neutral-300 rounded-xl;
+  @apply transition-all duration-200 ease-out;
+  @apply placeholder:text-neutral-400;
+  @apply hover:border-neutral-400;
+  @apply focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-100;
+  @apply disabled:bg-neutral-100 disabled:cursor-not-allowed disabled:text-neutral-500;
+  @apply min-h-[120px] resize-y;
+}
+
+/* Search Input - Unique rounded pill design */
+.input-search {
+  @apply w-full pl-12 pr-4 py-3 text-sm;
+  @apply bg-neutral-50 text-neutral-900;
+  @apply border-2 border-transparent rounded-full;
+  @apply transition-all duration-200 ease-out;
+  @apply placeholder:text-neutral-400;
+  @apply hover:bg-white hover:border-neutral-200;
+  @apply focus:outline-none focus:bg-white focus:border-primary-500 focus:ring-4 focus:ring-primary-100;
+}
+
+/* ==================== CHECKBOXES & RADIO BUTTONS ==================== */
+
+/* Custom Checkbox */
+.checkbox {
+  @apply w-5 h-5 rounded-md;
+  @apply border-2 border-neutral-300;
+  @apply bg-white text-primary-600;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:border-primary-400;
+  @apply focus:outline-none focus:ring-4 focus:ring-primary-100;
+  @apply checked:bg-primary-600 checked:border-primary-600;
+  @apply cursor-pointer;
+}
+
+/* Custom Radio Button */
+.radio {
+  @apply w-5 h-5 rounded-full;
+  @apply border-2 border-neutral-300;
+  @apply bg-white text-primary-600;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:border-primary-400;
+  @apply focus:outline-none focus:ring-4 focus:ring-primary-100;
+  @apply checked:bg-primary-600 checked:border-primary-600;
+  @apply cursor-pointer;
+}
+
+/* Toggle Switch - Modern switch design */
+.toggle {
+  @apply relative inline-block w-12 h-6;
+  @apply bg-neutral-300 rounded-full;
+  @apply transition-all duration-300 ease-out;
+  @apply cursor-pointer;
+  @apply before:content-[''] before:absolute before:top-0.5 before:left-0.5;
+  @apply before:w-5 before:h-5 before:bg-white before:rounded-full;
+  @apply before:transition-all before:duration-300 before:ease-out;
+  @apply before:shadow-md;
+  @apply checked:bg-primary-600;
+  @apply checked:before:translate-x-6;
+  @apply focus:outline-none focus:ring-4 focus:ring-primary-200;
+}
+
+/* ==================== LINKS ==================== */
+
+/* Primary Link */
+.link {
+  @apply text-primary-600 font-medium;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:text-primary-700 hover:underline;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-300 focus:rounded;
+  @apply active:text-primary-800;
+}
+
+/* Subtle Link */
+.link-subtle {
+  @apply text-neutral-600 font-normal;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:text-neutral-900 hover:underline;
+  @apply focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:rounded;
+}
+
+/* Link with Icon */
+.link-icon {
+  @apply inline-flex items-center gap-2;
+  @apply text-primary-600 font-medium;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:text-primary-700 hover:gap-3;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-300 focus:rounded;
+}
+
+/* Underline Animation Link */
+.link-animated {
+  @apply relative text-primary-600 font-medium;
+  @apply after:content-[''] after:absolute after:bottom-0 after:left-0;
+  @apply after:w-0 after:h-0.5 after:bg-primary-600;
+  @apply after:transition-all after:duration-300 after:ease-out;
+  @apply hover:after:w-full;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-300 focus:rounded;
+}
+
+/* ==================== DROPDOWNS & SELECTS ==================== */
+
+/* Select Dropdown */
+.select {
+  @apply w-full px-4 py-3 text-sm;
+  @apply bg-white text-neutral-900;
+  @apply border-2 border-neutral-300 rounded-xl;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:border-neutral-400;
+  @apply focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-100;
+  @apply disabled:bg-neutral-100 disabled:cursor-not-allowed disabled:text-neutral-500;
+  @apply cursor-pointer;
+  @apply appearance-none;
+  @apply bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20stroke%3D%22%236b7280%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%20d%3D%22m6%208%204%204%204-4%22%2F%3E%3C%2Fsvg%3E')];
+  @apply bg-no-repeat;
+  @apply bg-[right_0.75rem_center];
+  @apply bg-[length:1.5em_1.5em];
+  @apply pr-12;
+}
+
+/* Dropdown Menu Container */
+.dropdown {
+  @apply relative inline-block;
+}
+
+.dropdown-content {
+  @apply absolute top-full left-0 mt-2;
+  @apply min-w-[200px] w-max;
+  @apply bg-white rounded-xl shadow-xl;
+  @apply border border-neutral-200;
+  @apply py-2;
+  @apply opacity-0 invisible;
+  @apply transition-all duration-200 ease-out;
+  @apply z-[1000];
+}
+
+.dropdown.active .dropdown-content,
+.dropdown:hover .dropdown-content {
+  @apply opacity-100 visible;
+}
+
+.dropdown-item {
+  @apply block w-full px-4 py-2.5 text-sm text-left;
+  @apply text-neutral-700;
+  @apply transition-all duration-150 ease-out;
+  @apply hover:bg-primary-50 hover:text-primary-700;
+  @apply focus:outline-none focus:bg-primary-50 focus:text-primary-700;
+  @apply cursor-pointer;
+}
+
+.dropdown-divider {
+  @apply my-2 border-t border-neutral-200;
+}
+
+/* ==================== BADGES & TAGS ==================== */
+
+/* Badge - Modern pill design */
+.badge {
+  @apply inline-flex items-center gap-1.5;
+  @apply px-3 py-1 text-xs font-semibold;
+  @apply bg-neutral-100 text-neutral-700;
+  @apply rounded-full;
+  @apply transition-all duration-200 ease-out;
+}
+
+.badge-primary {
+  @apply bg-primary-100 text-primary-700;
+}
+
+.badge-secondary {
+  @apply bg-secondary-100 text-secondary-700;
+}
+
+.badge-success {
+  @apply bg-success-100 text-success-700;
+}
+
+.badge-warning {
+  @apply bg-warning-100 text-warning-800;
+}
+
+.badge-danger {
+  @apply bg-error-100 text-error-700;
+}
+
+.badge-info {
+  @apply bg-info-100 text-info-700;
+}
+
+/* Outlined Badge Variants */
+.badge-outline {
+  @apply bg-transparent border-2 border-neutral-300 text-neutral-700;
+}
+
+.badge-outline-primary {
+  @apply bg-transparent border-2 border-primary-500 text-primary-700;
+}
+
+/* Badge with Dot Indicator */
+.badge-dot {
+  @apply relative pl-5;
+}
+
+.badge-dot::before {
+  @apply content-[''] absolute left-2 top-1/2 -translate-y-1/2;
+  @apply w-2 h-2 rounded-full;
+  @apply bg-current;
+  @apply animate-pulse;
+}
+
+/* ==================== CARDS ==================== */
+
+/* Card - Modern with subtle shadow */
+.card {
+  @apply bg-white rounded-2xl;
+  @apply border border-neutral-200;
+  @apply shadow-sm;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-lg;
+  @apply overflow-hidden;
+}
+
+.card-interactive {
+  @apply bg-white rounded-2xl;
+  @apply border border-neutral-200;
+  @apply shadow-sm;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-xl hover:scale-[1.02] hover:border-primary-300;
+  @apply cursor-pointer;
+  @apply overflow-hidden;
+}
+
+.card-header {
+  @apply px-6 py-4;
+  @apply border-b border-neutral-200;
+}
+
+.card-body {
+  @apply px-6 py-4;
+}
+
+.card-footer {
+  @apply px-6 py-4;
+  @apply border-t border-neutral-200;
+  @apply bg-neutral-50;
+}
+
+/* Card Variants */
+.card-elevated {
+  @apply shadow-md hover:shadow-2xl;
+}
+
+.card-gradient {
+  @apply bg-gradient-to-br from-primary-50 to-secondary-50;
+  @apply border-transparent;
+}
+
+/* ==================== ALERTS & NOTIFICATIONS ==================== */
+
+/* Alert - Modern with icon support */
+.alert {
+  @apply flex items-start gap-3;
+  @apply px-4 py-3 rounded-xl;
+  @apply border-l-4;
+  @apply bg-neutral-50 border-neutral-400 text-neutral-800;
+}
+
+.alert-info {
+  @apply bg-info-50 border-info-500 text-info-900;
+}
+
+.alert-success {
+  @apply bg-success-50 border-success-500 text-success-900;
+}
+
+.alert-warning {
+  @apply bg-warning-50 border-warning-500 text-warning-900;
+}
+
+.alert-danger {
+  @apply bg-error-50 border-error-500 text-error-900;
+}
+
+.alert-title {
+  @apply font-semibold text-sm mb-1;
+}
+
+.alert-content {
+  @apply text-sm;
+}
+
+/* ==================== TOOLTIPS ==================== */
+
+.tooltip {
+  @apply relative inline-block;
+}
+
+.tooltip-content {
+  @apply absolute bottom-full left-1/2 -translate-x-1/2 mb-2;
+  @apply px-3 py-2 text-xs text-white;
+  @apply bg-neutral-900 rounded-lg;
+  @apply whitespace-nowrap;
+  @apply opacity-0 invisible;
+  @apply transition-all duration-200 ease-out;
+  @apply pointer-events-none;
+  @apply z-[1070];
+}
+
+.tooltip-content::after {
+  @apply content-[''] absolute top-full left-1/2 -translate-x-1/2;
+  @apply border-4 border-transparent border-t-neutral-900;
+}
+
+.tooltip:hover .tooltip-content {
+  @apply opacity-100 visible;
+}
+
+/* ==================== PROGRESS BARS ==================== */
+
+.progress {
+  @apply w-full h-2 bg-neutral-200 rounded-full overflow-hidden;
+}
+
+.progress-bar {
+  @apply h-full bg-gradient-to-r from-primary-500 to-primary-600;
+  @apply rounded-full;
+  @apply transition-all duration-500 ease-out;
+}
+
+.progress-bar-success {
+  @apply bg-gradient-to-r from-success-500 to-success-600;
+}
+
+.progress-bar-warning {
+  @apply bg-gradient-to-r from-warning-500 to-warning-600;
+}
+
+.progress-bar-danger {
+  @apply bg-gradient-to-r from-error-500 to-error-600;
+}
+
+/* Thick Progress Bar */
+.progress-lg {
+  @apply h-4;
+}
+
+/* Progress Bar with Label */
+.progress-labeled {
+  @apply h-6 flex items-center justify-center text-xs font-semibold text-white;
+}
+
+/* ==================== MODALS ==================== */
+
+.modal-backdrop {
+  @apply fixed inset-0 bg-black/50;
+  @apply backdrop-blur-sm;
+  @apply z-[1040];
+  @apply transition-opacity duration-300;
+}
+
+.modal {
+  @apply fixed inset-0 flex items-center justify-center;
+  @apply z-[1050];
+  @apply p-4;
+  @apply overflow-y-auto;
+}
+
+.modal-content {
+  @apply bg-white rounded-2xl shadow-2xl;
+  @apply w-full max-w-md;
+  @apply transform transition-all duration-300;
+  @apply scale-95 opacity-0;
+}
+
+.modal.active .modal-content {
+  @apply scale-100 opacity-100;
+}
+
+.modal-header {
+  @apply flex items-center justify-between;
+  @apply px-6 py-4 border-b border-neutral-200;
+}
+
+.modal-title {
+  @apply text-xl font-bold text-neutral-900;
+}
+
+.modal-close {
+  @apply p-2 rounded-lg;
+  @apply text-neutral-400 hover:text-neutral-600 hover:bg-neutral-100;
+  @apply transition-all duration-200;
+}
+
+.modal-body {
+  @apply px-6 py-4;
+}
+
+.modal-footer {
+  @apply flex items-center justify-end gap-3;
+  @apply px-6 py-4 border-t border-neutral-200;
+  @apply bg-neutral-50;
+}
+
+/* ==================== TABS ==================== */
+
+.tabs {
+  @apply flex border-b border-neutral-200;
+}
+
+.tab {
+  @apply px-6 py-3 text-sm font-medium;
+  @apply text-neutral-600;
+  @apply border-b-2 border-transparent;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:text-neutral-900 hover:border-neutral-300;
+  @apply focus:outline-none;
+  @apply cursor-pointer;
+}
+
+.tab.active {
+  @apply text-primary-600 border-primary-600;
+}
+
+/* Modern Pill Tabs */
+.tabs-pill {
+  @apply inline-flex gap-2 p-1;
+  @apply bg-neutral-100 rounded-xl;
+}
+
+.tab-pill {
+  @apply px-6 py-2 text-sm font-medium;
+  @apply text-neutral-600 bg-transparent rounded-lg;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:text-neutral-900;
+  @apply focus:outline-none;
+  @apply cursor-pointer;
+}
+
+.tab-pill.active {
+  @apply text-primary-700 bg-white shadow-md;
+}
+
+/* ==================== AVATARS ==================== */
+
+.avatar {
+  @apply inline-flex items-center justify-center;
+  @apply w-10 h-10 rounded-full;
+  @apply bg-primary-100 text-primary-700;
+  @apply font-semibold text-sm;
+  @apply overflow-hidden;
+}
+
+.avatar-sm {
+  @apply w-8 h-8 text-xs;
+}
+
+.avatar-lg {
+  @apply w-12 h-12 text-base;
+}
+
+.avatar-xl {
+  @apply w-16 h-16 text-xl;
+}
+
+.avatar-2xl {
+  @apply w-24 h-24 text-3xl;
+}
+
+/* Avatar with Status Indicator */
+.avatar-status {
+  @apply relative;
+}
+
+.avatar-status::after {
+  @apply content-[''] absolute bottom-0 right-0;
+  @apply w-3 h-3 rounded-full;
+  @apply border-2 border-white;
+  @apply bg-success-500;
+}
+
+.avatar-status-offline::after {
+  @apply bg-neutral-400;
+}
+
+.avatar-status-busy::after {
+  @apply bg-error-500;
+}
+
+.avatar-status-away::after {
+  @apply bg-warning-500;
+}
+
+/* ==================== DIVIDERS ==================== */
+
+.divider {
+  @apply border-t border-neutral-200;
+  @apply my-6;
+}
+
+.divider-vertical {
+  @apply border-l border-neutral-200;
+  @apply mx-4 h-full;
+}
+
+/* Divider with Text */
+.divider-text {
+  @apply relative flex items-center justify-center;
+  @apply my-6;
+  @apply before:content-[''] before:flex-1 before:border-t before:border-neutral-200;
+  @apply after:content-[''] after:flex-1 after:border-t after:border-neutral-200;
+}
+
+.divider-text span {
+  @apply px-4 text-sm text-neutral-500 font-medium;
+}
+
+/* ==================== SPINNERS & LOADERS ==================== */
+
+.spinner {
+  @apply inline-block w-6 h-6;
+  @apply border-4 border-neutral-200 border-t-primary-600;
+  @apply rounded-full;
+  @apply animate-spin;
+}
+
+.spinner-sm {
+  @apply w-4 h-4 border-2;
+}
+
+.spinner-lg {
+  @apply w-8 h-8 border-4;
+}
+
+.spinner-xl {
+  @apply w-12 h-12 border-[6px];
+}
+
+/* Dot Loader */
+.loader-dots {
+  @apply inline-flex items-center gap-2;
+}
+
+.loader-dots span {
+  @apply w-2 h-2 bg-primary-600 rounded-full;
+  @apply animate-bounce;
+}
+
+.loader-dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.loader-dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* ==================== PAGINATION ==================== */
+
+.pagination {
+  @apply inline-flex items-center gap-2;
+}
+
+.pagination-item {
+  @apply w-10 h-10 flex items-center justify-center;
+  @apply text-sm font-medium text-neutral-700;
+  @apply bg-white border border-neutral-300 rounded-lg;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:bg-primary-50 hover:border-primary-500 hover:text-primary-700;
+  @apply focus:outline-none focus:ring-4 focus:ring-primary-100;
+  @apply cursor-pointer;
+}
+
+.pagination-item.active {
+  @apply bg-primary-600 border-primary-600 text-white;
+  @apply hover:bg-primary-700 hover:border-primary-700;
+}
+
+.pagination-item.disabled {
+  @apply opacity-50 cursor-not-allowed;
+  @apply hover:bg-white hover:border-neutral-300 hover:text-neutral-700;
+}
+
+/* ==================== BREADCRUMBS ==================== */
+
+.breadcrumb {
+  @apply flex items-center gap-2 text-sm;
+}
+
+.breadcrumb-item {
+  @apply flex items-center gap-2;
+  @apply text-neutral-600;
+  @apply transition-colors duration-200;
+  @apply hover:text-primary-600;
+}
+
+.breadcrumb-item.active {
+  @apply text-neutral-900 font-medium;
+}
+
+.breadcrumb-separator {
+  @apply text-neutral-400;
+}
+
+/* ==================== CHIPS ==================== */
+
+.chip {
+  @apply inline-flex items-center gap-2;
+  @apply px-3 py-1.5 text-sm font-medium;
+  @apply bg-neutral-100 text-neutral-700;
+  @apply rounded-full;
+  @apply transition-all duration-200 ease-out;
+}
+
+.chip-primary {
+  @apply bg-primary-100 text-primary-700;
+}
+
+.chip-removable {
+  @apply pr-1;
+}
+
+.chip-remove {
+  @apply p-1 rounded-full;
+  @apply text-current hover:bg-black/10;
+  @apply transition-all duration-150;
+  @apply cursor-pointer;
+}
+
+/* ==================== FORM GROUPS ==================== */
+
+.form-group {
+  @apply mb-6;
+}
+
+.form-label {
+  @apply block text-sm font-semibold text-neutral-700 mb-2;
+}
+
+.form-hint {
+  @apply mt-1.5 text-xs text-neutral-500;
+}
+
+.form-error {
+  @apply mt-1.5 text-xs text-error-600 font-medium;
+}
+
+/* ==================== LISTS ==================== */
+
+.list {
+  @apply space-y-2;
+}
+
+.list-item {
+  @apply flex items-center gap-3 px-4 py-3;
+  @apply bg-white border border-neutral-200 rounded-xl;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:bg-neutral-50 hover:border-neutral-300;
+}
+
+.list-item-interactive {
+  @apply flex items-center gap-3 px-4 py-3;
+  @apply bg-white border border-neutral-200 rounded-xl;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:bg-primary-50 hover:border-primary-300 hover:shadow-md;
+  @apply cursor-pointer;
+}
+
+.list-item-active {
+  @apply bg-primary-50 border-primary-500;
+}
+
+/* ==================== SKELETON LOADERS ==================== */
+
+.skeleton {
+  @apply bg-gradient-to-r from-neutral-200 via-neutral-100 to-neutral-200;
+  @apply bg-[length:200%_100%];
+  @apply animate-[shimmer_1.5s_ease-in-out_infinite];
+  @apply rounded-lg;
+}
+
+.skeleton-text {
+  @apply h-4 w-full;
+}
+
+.skeleton-title {
+  @apply h-6 w-3/4;
+}
+
+.skeleton-avatar {
+  @apply w-10 h-10 rounded-full;
+}
+
+.skeleton-button {
+  @apply h-10 w-24;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
