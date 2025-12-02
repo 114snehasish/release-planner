@@ -1,0 +1,40 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__content">
+      <div class="header__branding">
+        <h1 class="header__title">
+          Release Planner
+        </h1>
+        <p class="header__subtitle">
+          Planning & Management Dashboard
+        </p>
+      </div>
+      <nav class="header__nav">
+        @if (authService.isAuthenticated()) {
+          <div class="header__user-section">
+            <div class="header__user-info">
+              <div class="avatar avatar-sm avatar-status">
+                {{ getUserInitials() }}
+              </div>
+              <span class="header__welcome-text">
+                Welcome, {{ authService.userName() }}
+              </span>
+            </div>
+            <button 
+              class="btn-outline btn-sm header__logout-btn" 
+              (click)="logout()"
+              type="button"
+            >
+              <svg class="header__logout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                </path>
+              </svg>
+              Logout
+            </button>
+          </div>
+        }
+      </nav>
+    </div>
+  </div>
+</header>

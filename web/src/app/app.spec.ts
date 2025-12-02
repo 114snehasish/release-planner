@@ -1,10 +1,26 @@
 import { TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { provideOAuthClient, OAuthService } from 'angular-oauth2-oidc';
 import { App } from './app';
+import { AuthService } from './core/auth';
 
 describe('App', () => {
+  let mockAuthService: jasmine.SpyObj<AuthService>;
+
   beforeEach(async () => {
+    mockAuthService = jasmine.createSpyObj('AuthService', ['initializeAuth'], {
+      isAuthenticated: jasmine.createSpy().and.returnValue(false),
+      userName: jasmine.createSpy().and.returnValue(''),
+    });
+    mockAuthService.initializeAuth.and.returnValue(Promise.resolve(true));
+
     await TestBed.configureTestingModule({
       imports: [App],
+      providers: [
+        provideHttpClient(),
+        provideOAuthClient(),
+        { provide: AuthService, useValue: mockAuthService },
+      ],
     }).compileComponents();
   });
 
@@ -14,10 +30,9 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it('should call initializeAuth on init', async () => {
     const fixture = TestBed.createComponent(App);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, release-planner-web');
+    await fixture.componentInstance.ngOnInit();
+    expect(mockAuthService.initializeAuth).toHaveBeenCalled();
   });
 });
